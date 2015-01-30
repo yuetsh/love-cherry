@@ -1,6 +1,7 @@
+/*CSS重置*/
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 10px; }
-body { background: #fff; color: #363636; font-size: 140%; overflow: hidden; }
+html { font-size: 62.5%;}
+body { background: #ffe; color: #000; font-size:62.5%;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, select, option { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: "微软雅黑", Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;  }
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 img, iframe, fieldset, button, input { border: none; }
@@ -16,92 +17,102 @@ button::-moz-focus-inner {
     padding: 0;
     border: none;
 }
-a, button, input, div, li { -webkit-tap-highlight-color: rgba(255,0,0,0); }/*去除android链接触摸时产生边框*/
+a, button, input, div, li { -webkit-tap-highlight-color: rgba(255,0,0,0); }
+/*去除android链接触摸时产生边框*/
 a { color: #3e3e3e; outline: none;text-decoration: none; }
 
 /*内部元素有浮动外框高度不定内容不被撑开解决方案*/
 .clear { zoom: 1; }
 .clear:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
 
-body{
-    background-color:#fff;
-    height: 100%;
-    width: 100%;
-    -webkit-overflow-scrolling:touch;overflow:auto;
+.index1{
+    margin-top: 2%;margin-bottom: 5%;position: absolute;top: 2%;
 }
-.id-pic {
-width: 100px;height:100px;margin: 10px;
+.index1 .span5{
+    width: 35%;height:35%;float: left;max-width: 150px;max-height: 150px;min-width: 100px;min-height: 100px;
+}
+.index1 .span7{
+    display: inline-block;width: 60%;margin-left: 5%; font-size: 1.4rem;
+}
+.index2{
+    margin-top: 2%;margin-bottom: 5%;position: absolute;top: 25%;width: 100%;
+}
+.index2 .span6 a{
+    float: left;width: 40%;margin-right: 10%;
 }
 
-/*导航菜单*/
+.index3 .span12{
+    position: absolute;top: 35%;width: 90%;
+}
+   /*列表*/
 #main-nav.nav-tabs.nav-stacked > li > a {
-padding: 10px 8px;
-font-weight: 600;
-color: #fff;
-/*渐变色*/
-background: #ad1f1f;
-background: -moz-linear-gradient(top, #ff171 0%, #ad1f1f 100%);
-background:     -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff171), color-stop(100%,#ad1f1f));
-background:  -webkit-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:     -moz-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:      -ms-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:       -o-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:          linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e33636', endColorstr='#de3a3a');
-/*border: 1px solid #D5D5D5;*/
-border-radius: 4px;
+    font-size: 1.4rem;
+    color: #000;
+    /*渐变色*/
+    background: #ad1f1f;
+    background: -moz-linear-gradient(top, #ff171 0%, #ad1f1f 100%);
+    background:     -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FCF1DB), color-stop(100%,#F1E6CA));
+    background:  -webkit-linear-gradient(top, #FCF1DB 0%, #F1E6CA 100%);
+    background:     -moz-linear-gradient(top, #FCF1DB 0%, #F1E6CA 100%);
+    background:       -o-linear-gradient(top, #FCF1DB 0%, #F1E6CA 100%);
+    background:          linear-gradient(top, #FCF1DB 0%, #F1E6CA 100%);
+    border: 1px solid #D5D5D5;
+    border-radius:4px;
 }
 
 #main-nav.nav-tabs.nav-stacked > li > a > span {
-color: #fff;
+    color: #fff;
 }
 
 #main-nav.nav-tabs.nav-stacked > li {
-margin-bottom: 6px;
+    margin-bottom: 6px;
 }
 
 /*箭头转换*/
 .nav-header.collapsed > span.glyphicon-chevron-toggle:before {
-content: "\e114";
+    content: "\e114";
 }
 
 .nav-header > span.glyphicon-chevron-toggle:before {
-content: "\e113";
+    content: "\e113";
 }
 
 /*定义二级菜单样式*/
 .secondmenu{
-width: 80%;
-margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
 }
 .secondmenu a {
-font-size: 14px;
-color: #fff;
-text-align: center;
-border-radius: 4px;
-display: block;
-margin-top:4px;
-/*渐变色*/
-background: #fff;
-background: -moz-linear-gradient(top, #fa1a1a 0%, #d01c1c 100%);
-background:     -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa1a1a), color-stop(100%,#d01c1c));
-background: -webkit-linear-gradient(top, #fa1a1a 0%, #d01c1c 100%);
-background:      -o-linear-gradient(top, #fa1a1a 0%, #d01c1c 100%);
-background:     -ms-linear-gradient(top, #fa1a1a 0%, #d01c1c 100%);
-background:         linear-gradient(top, #fa1a1a 0%, #d01c1c 100%);
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa1a1a', endColorstr='#d01c1c')";           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fa1a1a', endColorstr='#d01c1c');
-/*border: 1px solid #D5D5D5;*/
-border-radius: 4px;
+    font-size: 1.4rem;
+    color: #000;
+    border-radius: 4px;
+    display: block;
+    margin-top:4px;
+    /*渐变色*/
+    background: #fff;
+    background: -moz-linear-gradient(top, #FEFEFE 0%, #EEEEEE 100%);
+    background:     -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#EEEEEE));
+    background: -webkit-linear-gradient(top, #FEFEFE 0%, #EEEEEE 100%);
+    background:      -o-linear-gradient(top, #FEFEFE 0%, #EEEEEE 100%);
+    background:         linear-gradient(top, #FEFEFE 0%, #EEEEEE 100%);
+    border:1px solid #D5D5D5;
 }
 .secondmenu > li > a:visited{
-background-color: #dbc2c2;
+    background-color: #dbabac;
 }
 .secondmenu > li > a:hover{
-background-color: #d33b3b;
+    background-color: #dbabac;
 }
 .secondmenu > li:first-child{
-margin-top: 6px;
+    margin-top: 6px;
 }
-.secondmenu > li:last-child{
-margin-bottom: 2px;
+
+.index4{
+    width: 90%;height: 40px;position: fixed;bottom: 2%;
+}
+.index4 .span3{
+    float: left;margin: 0 auto;width: 25%;text-align: center;background-color: #c10100;
+}
+.index4 .span3 a{
+    display: block;height: 40px;line-height: 40px; color: #fff;font-size: 1.4rem;
 }
