@@ -1,8 +1,32 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 10px; }
+body { background: #fff; color: #363636; font-size: 140%; overflow: hidden; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, select, option { margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: "微软雅黑", Arial, Helvetica, sans-serif; -webkit-text-size-adjust:none;  }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+img, iframe, fieldset, button, input { border: none; }
+img { vertical-align:top; }
+ul, ol, li { list-style: none; }
+em, i { font-style: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+table, th, td { vertical-align: top; }
+input, button { margin: 0; vertical-align: top; }
+button { display : inline-block; overflow: visible; width: auto; outline: none; border: none; background: none; text-align: center; cursor: pointer; }
+button::-moz-focus-inner {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+a, button, input, div, li { -webkit-tap-highlight-color: rgba(255,0,0,0); }/*去除android链接触摸时产生边框*/
+a { color: #3e3e3e; outline: none;text-decoration: none; }
+
+/*内部元素有浮动外框高度不定内容不被撑开解决方案*/
+.clear { zoom: 1; }
+.clear:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+
 body{
     background-color:#fff;
     height: 100%;
-    width: 94%;
-    padding-left: 4%;
+    width: 100%;
     -webkit-overflow-scrolling:touch;overflow:auto;
 }
 .id-pic {
@@ -10,10 +34,6 @@ width: 100px;height:100px;margin: 10px;
 }
 
 /*导航菜单*/
-#main-nav {
-margin-left: 1px;
-}
-
 #main-nav.nav-tabs.nav-stacked > li > a {
 padding: 10px 8px;
 font-weight: 600;
@@ -35,27 +55,6 @@ border-radius: 4px;
 #main-nav.nav-tabs.nav-stacked > li > a > span {
 color: #fff;
 }
-
-/*hover效果*/
-/*
-#main-nav.nav-tabs.nav-stacked > li.active > a, #main-nav.nav-tabs.nav-stacked > li > a:hover {
-color: #FFF;
-background: #3C4049;
-background: -moz-linear-gradient(top, #4A515B 0%, #3C4049 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A515B), color-stop(100%,#3C4049));
-background: -webkit-linear-gradient(top, #4A515B 0%,#3C4049 100%);
-background: -o-linear-gradient(top, #4A515B 0%,#3C4049 100%);
-background: -ms-linear-gradient(top, #4A515B 0%,#3C4049 100%);
-background: linear-gradient(top, #4A515B 0%,#3C4049 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
-border-color: #2B2E33;
-}
-
-#main-nav.nav-tabs.nav-stacked > li.active > a, #main-nav.nav-tabs.nav-stacked > li > a:hover > span {
-color: #fff;
-}
-*/
 
 #main-nav.nav-tabs.nav-stacked > li {
 margin-bottom: 6px;
