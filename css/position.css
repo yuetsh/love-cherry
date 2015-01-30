@@ -22,10 +22,11 @@ color: #fff;
 background: #ad1f1f;
 background: -moz-linear-gradient(top, #ff171 0%, #ad1f1f 100%);
 background:     -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff171), color-stop(100%,#ad1f1f));
-background: -webkit-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:      -o-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:     -ms-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
-background:         linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
+background:  -webkit-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
+background:     -moz-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
+background:      -ms-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
+background:       -o-linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
+background:          linear-gradient(top, #ff1717 0%, #ad1f1f 100%);
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e33636', endColorstr='#de3a3a');
 /*border: 1px solid #D5D5D5;*/
 border-radius: 4px;
