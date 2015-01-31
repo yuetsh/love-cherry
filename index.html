@@ -15,19 +15,22 @@
 </head>
 <body>
 <!--正文开始-->
-
+<!--数据绑定请见注释-->
 <div class="container-fluid">
 <!--第一层-->
     <div class="row-fluid index1">
         <div class="span5">
+            <!--微信头像图片数据绑定-->
             <img src="imgs/id-pic.png" alt="" class="img-rounded img-responsive">
         </div>
         <div class="span7">
             <ul >
+                <!--以下span标签中都是需要从数据库中传数据-->
                 <li>会员ID：<span>2333333</span></li>
                 <li>昵称：<span>yuetsh</span></li>
                 <li>积分：<span>00000</span></li>
                 <li>关注时间：<span>2015-01-27</span></li>
+                <!--是：hide <a> 标签；否：show <a>标签-->
                 <li>东家：<span>否</span><br/><a href="">点击此链接购买成为东家</a></li>
             </ul>
         </div>
@@ -35,10 +38,12 @@
 <!--第二层-->
     <div class="row-fluid index2">
         <div class="span6">
-            <a href="#" class="btn btn-large btn-default disabled">营业额：0000</a>
+            <!--数据绑定到以下span标签中-->
+            <a href="#" class="btn btn-large btn-default disabled">营业额：<span>0000</span></a>
         </div>
         <div class="span6">
-            <a href="#" class="btn btn-large btn-default disabled">佣金：0000</a>
+            <!--数据绑定到以下span标签中-->
+            <a href="#" class="btn btn-large btn-default disabled">佣金：<span>0000</span></a>
         </div>
     </div>
 <!--第三层-->
@@ -50,10 +55,11 @@
                         <i class="glyphicon glyphicon-user"></i>
                         我的会员
                         <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
-                        <!--浮动标签-->
+                        <!--浮动span标签中需要绑定数据，留下“人”字-->
                         <span class="label label-warning pull-right">5人</span>
                     </a>
                     <ul id="member" class="nav nav-list collapse secondmenu">
+                        <!--以下<a>标签的href值-->
                         <li><a href="#">一级会员<span class="pull-right glyphicon glyphicon-chevron-right"></span><span class="label label-warning pull-right">5</span></a></li>
                         <li><a href="#">二级会员<span class="pull-right glyphicon glyphicon-chevron-right"></span><span class="label label-warning pull-right">55</span></a></li>
                         <li><a href="#">三级会员<span class="pull-right glyphicon glyphicon-chevron-right"></span><span class="label label-warning pull-right">555</span></a></li>
@@ -64,12 +70,13 @@
                         <i class="glyphicon glyphicon-send"></i>
                         我的推广
                         <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
-                        <!--浮动标签-->
+                        <!--浮动span标签中需要绑定数据，留下“单”字-->
                         <span class="label label-warning pull-right">5单</span>
                     </a>
                     <ul id="marketing" class="nav nav-list collapse secondmenu">
-                        <li><a href="#">下单购买<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">成为分销<span class="label label-warning pull-right">22225</span></a></li>
+                        <!--不用修改href-->
+                        <li><a href="">下单购买<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">成为分销<span class="label label-warning pull-right">22225</span></a></li>
                     </ul>
                 </li>
                 <li>
@@ -77,20 +84,22 @@
                         <i class="glyphicon glyphicon-usd"></i>
                         我的佣金
                         <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
-                        <!--浮动标签-->
+                        <!--浮动span标签中需要绑定数据，留下“元”字-->
                         <span class="label label-warning pull-right">0.00元</span>
                     </a>
                     <ul id="money" class="nav nav-list collapse secondmenu">
-                        <li><a href="#">未付款定单佣金<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">已付款定单佣金<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">未收货定单佣金<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">已收货定单佣金<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">已审核定单佣金<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">已提现佣金<span class="label label-warning pull-right">1666</span></a></li>
-                        <li><a href="#">可提现佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <!--不用修改href-->
+                        <li><a href="">未付款定单佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">已付款定单佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">未收货定单佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">已收货定单佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">已审核定单佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">已提现佣金<span class="label label-warning pull-right">1666</span></a></li>
+                        <li><a href="">可提现佣金<span class="label label-warning pull-right">1666</span></a></li>
                     </ul>
                 </li>
                 <li>
+                    <!--链接到提现界面-->
                     <a href="#">
                         <i class="glyphicon glyphicon-credit-card"></i>
                         申请提现
@@ -99,6 +108,7 @@
                 </li>
 
                 <li>
+                    <!--链接到订单界面-->
                     <a href="#">
                         <i class="glyphicon glyphicon-duplicate"></i>
                         我的订单
@@ -114,20 +124,24 @@
 <!--第四层-->
     <div class="row-fluid index4">
         <div class="span3">
+            <!--链接到宣传页面-->
             <a href="">宣传页面</a>
         </div>
         <div class="span3">
+            <!--链接到购物车-->
             <a href="">购物车</a>
         </div>
         <div class="span3">
+            <!--链接到订单页面-->
             <a href="">我的订单</a>
         </div>
         <div class="span3">
-            <a href="">我的分销</a>
+            <!--自身链接-->
+            <a href="#">我的分销</a>
         </div>
     </div>
+<!--页面结束-->
 </div>
-
 <!--正文结束-->
 
 <script src="js/jquery-1.11.2.min.js"></script>
