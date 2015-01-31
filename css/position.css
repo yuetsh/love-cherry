@@ -26,22 +26,22 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
 .clear:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
 
 .index1{
-    margin-top: 2%;margin-bottom: 5%;position: absolute;top: 2%;
+    margin-top: 2%;position: absolute;top: 3%; width: 90%;
 }
 .index1 .span5{
-    width: 35%;height:35%;float: left;max-width: 150px;max-height: 150px;min-width: 100px;min-height: 100px;
+    width: 35%;height:35%;float: left;margin-left:3%;max-width: 150px;max-height: 150px;min-width: 100px;min-height: 100px;
 }
 .index1 .span7{
-    display: inline-block;width: 60%;margin-left: 5%; font-size: 1.4rem;
+    display: inline-block;width: 55%;margin-left: 7%; font-size: 1.4rem;
 }
 .index1 .span7 a{
     color: #3879d8;text-decoration: none;
 }
 .index2{
-    margin-top: 2%;margin-bottom: 5%;position: absolute;top: 25%;width: 100%;
+    position: absolute;top: 25%;width: 90%;margin: 0 auto;
 }
 .index2 .span6 a{
-    float: left;width: 40%;margin-right: 10%;
+    float: left;width: 40%;margin-left: 5%; margin-right: 5%;
 }
 
 .index3 .span12{
@@ -49,6 +49,12 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
 }
 .index3 .span12 ul li > p{
     text-align: center;height: 42px;line-height: 42px;
+}
+.index3 .span12 ul li a span.label{
+    margin-right: 15px;font-weight: normal;line-height: 1.4rem;padding: 0.2em 0.6em;font-size:100%;
+}
+.index3 .span12 ul#member li a .glyphicon-chevron-right{
+    color: #efac4e;
 }
    /*列表*/
 #main-nav.nav-tabs.nav-stacked > li > a {
@@ -114,7 +120,7 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
 }
 
 .index4{
-    width: 90%;height: 40px;position: fixed;bottom: 2%;
+    width: 90%;height: 40px;position: fixed;bottom: 0%;
 }
 .index4 .span3{
     float: left;margin: 0 auto;width: 25%;text-align: center;background-color: #c10100;
