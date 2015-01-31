@@ -9,121 +9,122 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="white">
     <meta name="format-detection" content="telephone=no">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="css/position.css">
 </head>
 <body>
 <!--正文开始-->
 
-<div class="row" style="margin-top:10px; padding-left:10px;">
-    <div class="col-xs-3">
-        <div class="id-pic">
+<div class="container-fluid">
+<!--第一层-->
+    <div class="row-fluid index1">
+        <div class="span5">
             <img src="imgs/id-pic.png" alt="" class="img-rounded img-responsive">
         </div>
+        <div class="span7">
+            <ul >
+                <li>会员ID：<span>2333333</span></li>
+                <li>昵称：<span>yuetsh</span></li>
+                <li>积分：<span>00000</span></li>
+                <li>关注时间：<span>2015-01-27</span></li>
+                <li>东家：<span>否</span><br/><a href="">点击此链接购买成为东家</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="col-xs-9">
-        <ul style="list-style:none;padding-left:30px;margin-top:10px;line-height:20px;">
-            <li>会员ID：<span>2333333</span></li>
-            <li>昵称：<span>yuetsh</span></li>
-            <li>积分：<span>00000</span></li>
-            <li>关注时间：<span>2015-01-27</span></li>
-            <li>东家：<span>否</span><a href="">点击此链接购买成为东家</a></li>
-        </ul>
+<!--第二层-->
+    <div class="row-fluid index2">
+        <div class="span6">
+            <a href="#" class="btn btn-large btn-default disabled">营业额：0000</a>
+        </div>
+        <div class="span6">
+            <a href="#" class="btn btn-large btn-default disabled">佣金：0000</a>
+        </div>
     </div>
-</div>
-<div class="row" style="margin-top:10px;">
-    <div class="col-xs-6" style="text-align:center;">
-        <a href="#" class="btn btn-large btn-default disabled" style="width:80%">营业额：0000</a>
-    </div>
-    <div class="col-xs-6" style="text-align:center;">
-        <a href="#" class="btn btn-large btn-default disabled" style="width:80%">佣金：0000</a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-xs-11" style="left:4%; padding-top:10px;">
-        <ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
-            <li>
-                <a href="#member" class="nav-header collapsed" data-toggle="collapse">
-                    <i class="glyphicon glyphicon-cog"></i>
-                    我的会员
-                    <span class="pull-right glyphicon glyphicon-chevron-toggle" style="margin-top:2px;"></span>
-                    <!--浮动标签-->
-                    <span class="label label-warning pull-right"
-                          style="margin-right:5px; padding-top:3px;font-size:14px;">5人</span>
+<!--第三层-->
+    <div class="row-fluid index3">
+        <div class="span12">
+            <ul id="main-nav" class="nav nav-tabs nav-stacked">
+                <li>
+                    <a href="#member" class="nav-header collapsed" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        我的会员
+                        <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+                        <!--浮动标签-->
+                        <span class="label label-warning pull-right">5人</span>
+                    </a>
+                    <ul id="member" class="nav nav-list collapse secondmenu">
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>一级会员</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>二级会员</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>三级会员</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#marketing" class="nav-header collapsed" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        我的推广
+                        <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+                        <!--浮动标签-->
+                        <span class="label label-warning pull-right">5单</span>
+                    </a>
+                    <ul id="marketing" class="nav nav-list collapse secondmenu">
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>下单购买</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>成为分销</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#money" class="nav-header collapsed" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        我的佣金
+                        <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+                        <!--浮动标签-->
+                        <span class="label label-warning pull-right">0.00元</span>
+                    </a>
+                    <ul id="money" class="nav nav-list collapse secondmenu">
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>未付款定单佣金</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>已付款定单佣金</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>未收货定单佣金</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>已收货定单佣金</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>已审核定单佣金</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>已提现佣金</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>可提现佣金</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-credit-card"></i>
+                        申请提现
+                        <span class="pull-right glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </li>
 
-                </a>
-                <ul id="member" class="nav nav-list collapse secondmenu" style="height: 0px;">
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>一级会员</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>二级会员</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>三级会员</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#marketing" class="nav-header collapsed" data-toggle="collapse">
-                    <i class="glyphicon glyphicon-cog"></i>
-                    我的推广
-                    <span class="pull-right glyphicon glyphicon-chevron-toggle" style="margin-top:2px;"></span>
-                    <!--浮动标签-->
-                    <span class="label label-warning pull-right"
-                          style="margin-right:5px; padding-top:3px;font-size:14px;">5单</span>
-                </a>
-                <ul id="marketing" class="nav nav-list collapse secondmenu" style="height: 0px;">
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>下单购买</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>成为分销</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#money" class="nav-header collapsed" data-toggle="collapse">
-                    <i class="glyphicon glyphicon-cog"></i>
-                    我的佣金
-                    <span class="pull-right glyphicon glyphicon-chevron-toggle" style="margin-top:2px;"></span>
-                    <!--浮动标签-->
-                    <span class="label label-warning pull-right"
-                          style="margin-right:5px; padding-top:3px;font-size:14px;">0.00元</span>
-                </a>
-                <ul id="money" class="nav nav-list collapse secondmenu" style="height: 0px;">
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>未付款定单佣金</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>已付款定单佣金</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>未收货定单佣金</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>已收货定单佣金</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>已审核定单佣金</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>已提现佣金</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>可提现佣金</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="glyphicon glyphicon-credit-card"></i>
-                    申请提现
-                    <span class="pull-right glyphicon glyphicon-chevron-right"
-                          style="margin-top:2px;margin-right:2px;"></span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
-                    <i class="glyphicon glyphicon-globe"></i>
-                    我的订单
-                    <span class="pull-right glyphicon glyphicon-chevron-right"
-                          style="margin-top:2px;margin-right:2px;"></span>
-                </a>
-            </li>
-        </ul>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-globe"></i>
+                        我的订单
+                        <span class="pull-right glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </li>
+                <li>
+                    <p>版权信息：爱樱维</p>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="row" style="position: fixed;bottom: 0; background-color: #000; width: 100%;">
-    <div class="col-xs-3">
-        <a href="" style="display:block; height:50px;line-height:50px; text-decoration: none; color: #fff;">宣传页面</a>
-    </div>
-    <div class="col-xs-3">
-        <a href="" style="line-height:50px;">购物车</a>
-    </div>
-    <div class="col-xs-3">
-        <a href="" style="line-height:50px;">我的订单</a>
-    </div>
-    <div class="col-xs-3">
-        <a href="" style="line-height:50px;">我的分销</a>
+<!--第四层-->
+    <div class="row-fluid index4">
+        <div class="span3">
+            <a href="">宣传页面</a>
+        </div>
+        <div class="span3">
+            <a href="">购物车</a>
+        </div>
+        <div class="span3">
+            <a href="">我的订单</a>
+        </div>
+        <div class="span3">
+            <a href="">我的分销</a>
+        </div>
     </div>
 </div>
 

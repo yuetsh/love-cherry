@@ -34,6 +34,9 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
 .index1 .span7{
     display: inline-block;width: 60%;margin-left: 5%; font-size: 1.4rem;
 }
+.index1 .span7 a{
+    color: #3879d8;text-decoration: none;
+}
 .index2{
     margin-top: 2%;margin-bottom: 5%;position: absolute;top: 25%;width: 100%;
 }
@@ -42,7 +45,10 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
 }
 
 .index3 .span12{
-    position: absolute;top: 35%;width: 90%;
+    position: absolute;top: 35%;width: 90%;overflow: hidden;
+}
+.index3 .span12 ul li > p{
+    text-align: center;height: 42px;line-height: 42px;
 }
    /*列表*/
 #main-nav.nav-tabs.nav-stacked > li > a {
@@ -114,5 +120,5 @@ a { color: #3e3e3e; outline: none;text-decoration: none; }
     float: left;margin: 0 auto;width: 25%;text-align: center;background-color: #c10100;
 }
 .index4 .span3 a{
-    display: block;height: 40px;line-height: 40px; color: #fff;font-size: 1.4rem;
+    display: block;height: 40px;line-height: 40px; color: #fff;font-size: 1.4rem;text-decoration: none;
 }
